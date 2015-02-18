@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fillViewport="true"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:stretchColumns="0">
+    <TableRow>
+        <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="6dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ui_label_conversation_title"></TextView>
+
+             <EditText
+                 android:id="@+id/conversationTitle"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:text="@string/txt_conversation_title_default"
+                 />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ui_label_conversation_person_name"></TextView>
+
+             <EditText
+                 android:id="@+id/conversationPersonName"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:text="@string/txt_conversation_person_name_default"
+                 />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ui_label_conversation_submit_filter"></TextView>
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/conversationDaysBack"
+                android:lines="1"
+                android:numeric="integer"
+                android:hint="@string/ui_label_conversation_submit_filter_hint" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    >
+                        <Button
+                            android:id="@+id/buttonSubmitDialog"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:text="@string/ui_btn_submit"
+                        ></Button>
+                         <Button
+                            android:id="@+id/buttonCancelDialog"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:text="@string/ui_btn_cancel"
+                         ></Button>
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

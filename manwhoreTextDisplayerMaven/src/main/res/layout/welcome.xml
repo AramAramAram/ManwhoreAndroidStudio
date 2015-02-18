@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/layoutWelcome"
+            >
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/ui_label_welcome"
+           android:layout_weight="1"
+           android:paddingTop="6dip"
+           android:paddingBottom="6dip"
+           android:textSize="9pt"
+           android:gravity="center"
+           android:textStyle="bold"
+           />
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/welcomeLabelProfileStatus"
+           android:layout_weight="1"
+           android:paddingTop="6dip"
+           android:paddingBottom="6dip"
+           android:textSize="9pt"
+           android:gravity="center"/>
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/welcomeLabelProfileQuestion"
+           android:text="@string/ui_label_welcome_profile_question"
+           android:visibility="gone"
+           android:layout_weight="1"
+           android:paddingTop="6dip"
+           android:paddingBottom="6dip"
+           android:textSize="9pt"
+           android:gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/welcomeBtnConversations"
+            android:text="@string/ui_btn_welcome_conversations"
+            android:textSize="9pt"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcomeBtnPreferences"
+            android:layout_weight="1"
+            android:textSize="9pt"
+            />
+
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/ui_label_welcome_create_profile"
+           android:id="@+id/welcomeLabelCreateProfile"
+           android:visibility="gone"
+           android:layout_weight="1"
+           android:paddingTop="6dip"
+           android:paddingBottom="6dip"
+           android:textSize="9pt"
+           android:gravity="center"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/welcomeBtnRegister"
+            android:text="@string/ui_btn_welcome_register_here"
+            android:textSize="9pt"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

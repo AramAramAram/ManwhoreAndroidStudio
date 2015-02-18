@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+                android:title="Manwhore User Profile">
+		<EditTextPreference
+                android:name="Username"
+                android:summary="Set username used on Manwhore website"
+                android:title="Username"
+                android:key="mwUsernamePref"
+                />
+		<EditTextPreference
+            android:name="Password"
+            android:summary="Set password for the Manwhore website"
+            android:password="true"
+            android:title="Password"
+            android:key="mwPasswordPref" />
+		<Preference
+            android:title="Check against website"
+            android:summary="Check whether entered user info is valid"
+            android:key="mwCheckProfilePref" />
+	</PreferenceCategory>
+	<PreferenceCategory
+                android:title="Troubleshooting">
+		<CheckBoxPreference
+                android:title="Adjust messages"
+                android:summary="Adjust timezone of incoming messages"
+                android:key="mwAdjustIncoming"
+                />
+                <Preference
+                android:title="Open support forum"
+                android:summary="Open support discussion forum for this application"
+                android:key="mwSupportForumPref" />
+                <CheckBoxPreference
+                    android:title="Send application logs"
+                    android:summary="Enable this to send us logs from this application in case of a problem."
+                    android:key="mwSendLogs"
+                />
+
+		<!--<ListPreference
+            android:key="mwAdjustValue"
+            android:title="Adjustment amount"
+            android:summary="Define the adjustment to incoming messages"
+            android:defaultValue="0"
+            android:entries="@array/adjustTime"
+            android:entryValues="@array/adjustTimeValues"
+            android:dependency="mwAdjustIncoming"
+        />-->
+	</PreferenceCategory>
+</PreferenceScreen>

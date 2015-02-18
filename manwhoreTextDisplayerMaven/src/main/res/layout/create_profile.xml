@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fillViewport="true"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+    <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/ui_label_create_profile_username" />
+
+        <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/createProfileUsername"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/ui_label_create_profile_password" />
+
+        <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/createProfilePassword"
+                android:password="true" />
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/ui_label_create_profile_repeat_password" />
+
+        <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:password="true"
+                android:id="@+id/createProfileRepeatPassword"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/ui_label_create_profile_email" />
+
+        <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/createProfileEmail"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/ui_label_create_profile_repeat_email" />
+
+        <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/createProfileRepeatEmail"/>
+
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/ui_btn_create_profile_submit"
+                android:id="@+id/btnCreateProfileSubmit"/>
+
+    </LinearLayout>
+</ScrollView>

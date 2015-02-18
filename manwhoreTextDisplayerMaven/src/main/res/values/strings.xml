@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">ManwhoreTextDisplayer</string>
+    <string name="webservice_url">https://manwhore.org/forum/xmlrpc.php</string>
+    <!--<string name="webservice_url">http://testing.myspecialoffer.org/mwsync</string>-->
+    <!--<string name="webservice_url">http://10.0.0.36/drupal/?q=prdel</string>-->
+    
+	<string name="ui_label_message_me">Me</string>
+	<string name="ui_label_new_filter">Create filter</string>	
+	<string name="ui_label_date_from">Date from:</string>
+	<string name="ui_label_date_to">Date to:</string>
+	<string name="ui_label_undefined">Undefined</string>
+	<string name="ui_label_check">Check:</string>
+	<string name="ui_label_nothing">-</string>
+	<string name="ui_label_rd_ok">Relative date ok</string>
+	<string name="ui_label_rd_err">Invalid format</string>
+	<string name="ui_label_conversations">Conversations</string>
+	<string name="ui_label_conversation_sortby">Sort conversations by</string>
+	<string name="ui_label_conversation_sort_date">Last message date</string>
+	<string name="ui_label_conversation_sort_contact">Contact name</string>
+	<string name="ui_label_conversation_sort_order">In</string>
+	<string name="ui_label_sort_order_asc">Ascending order</string>
+	<string name="ui_label_sort_order_desc">Descending order</string>
+	<string name="ui_label_messages">Messages</string>
+	<string name="ui_label_messages_sort_order">Show</string>
+	<string name="ui_label_messages_asc">Oldest first</string>
+	<string name="ui_label_messages_desc">Newest first</string>
+	<string name="ui_label_date_interval">Date interval</string>
+	<string name="ui_label_no_filters">No filters defined</string>
+	<string name="ui_label_no_conversations">No conversations found</string>
+	<string name="ui_label_saved_filters_list">Saved filters list</string>
+	<string name="ui_label_ok">Ok</string>
+	<string name="ui_label_export_settings">Export settings</string>
+	<string name="ui_label_export_mode">Export messages with</string>
+	<string name="ui_label_export_mode_regular">Full info</string>
+	<string name="ui_label_export_mode_simple">Simplified info</string>
+	<string name="ui_label_exporting">Exporting conversation...</string>
+    <string name="ui_label_submitting">Submitting conversation...</string>
+    <string name="ui_label_communicating">Communicating with website...</string>
+    <string name="ui_label_login_ok">User account verified successfully.</string>
+    <string name="ui_label_profile_empty">User profile not configured. Please define username and password.</string>
+    <string name="ui_label_welcome">Welcome to ManwhoreTextDisplayer!</string>
+    <string name="ui_label_welcome_profile_undefined">Your manwhore.org profile is not properly configured!</string>
+    <string name="ui_label_welcome_profile_question">If you have a manwhore.org profile, please</string>
+    <string name="ui_label_welcome_create_profile">if not, you can</string>
+    <string name="ui_label_welcome_profile_set">From here you can</string>
+    <string name="ui_label_create_profile">Create manwhore.org profile</string>
+    <string name="ui_label_create_profile_username">User name:</string>
+    <string name="ui_label_create_profile_password">Password:</string>
+    <string name="ui_label_create_profile_repeat_password">Repeat password:</string>
+    <string name="ui_label_create_profile_email">E-mail address:</string>
+    <string name="ui_label_create_profile_repeat_email">Repeat e-mail address:</string>
+    <string name="ui_label_create_profile_success">Your manwhore profile was successfully created. Welcome aboard!</string>
+    <string name="ui_label_conversation_filter_back">days back</string>
+    <string name="ui_label_conversation_filter_show">Show</string>
+    <string name="ui_label_conversation_filter_default">all messages</string>
+    <string name="ui_label_conversation_filter_today">today\'s messages</string>
+    <string name="ui_label_conversation_title">Conversation title</string>
+    <string name="ui_label_conversation_person_name">Person name</string>
+    <string name="ui_label_conversation_submit_filter"># of days back (0 for today):</string>
+    <string name="ui_label_conversation_submit_filter_hint">All</string>
+    <string name="ui_label_conversation_already_submitted">You have already submitted this conversation in the past. You can send all new texts, adjust the # of days back manually or submit as new topic.</string>
+
+    <string name="err_webservice_failed">Cannot connect to website. Either it is down or internet connection not available.</string>
+    <string name="err_webservice_server_error">An error ocurred on the manwhore.org website. Please, try again. If the problem persists, contact website administrator.</string>
+	<string name="err_file_export_failed">Conversation export failed. Please make sure there is enough free space on your memory card for export processing.</string>
+    <string name="err_submit_failed_generic">Conversation submitting failed - unexpected error.</string>
+    <string name="err_submit_failed_connection">Conversation export failed. Make sure internet connection is available.</string>
+    <string name="err_submit_failed_server">Conversation export failed - server error. Please, try again. If the problem persists, contact website administrator.</string>
+    <string name="err_conversation_empty">Conversation you are trying to submit contains no messages. Check applied filter.</string>
+    <string name="err_conversation_not_found_on_server">Previously submitted conversation was not found on server (possibly deleted by admin), submitted as new.</string>
+	<string name="err_media_not_mounted">Storage card not accessible, cannot create export file.</string>
+    <string name="err_login_failed">Login to website failed. Please check username and password.</string>
+    <string name="err_username_empty">Username cannot be empty!</string>
+    <string name="err_password_empty">Password cannot be empty!</string>
+    <string name="err_password_mismatch">Password and repeated password do not match!</string>
+    <string name="err_email_invalid">E-mail address invalid!</string>
+    <string name="err_email_mismatch">E-mail address and repeated e-mail address do not match!</string>
+
+	<string name="ui_btn_apply_filter">Apply filter</string>
+	<string name="ui_btn_save_filter">Save filter</string>
+	<string name="ui_btn_set_abs_date">Absolute</string>
+	<string name="ui_btn_set_rel_date">Relative</string>
+	<string name="ui_btn_clear_date"> Clear </string>
+	<string name="ui_btn_cancel">Cancel</string>
+    <string name="ui_btn_ok">Ok</string>
+	<string name="ui_btn_set">Set</string>
+    <string name="ui_btn_apply">Apply</string>
+    <string name="ui_btn_submit">Submit</string>
+    <string name="ui_btn_welcome_configure_here">Configure it here</string>
+    <string name="ui_btn_welcome_register_here">Register here</string>
+    <string name="ui_btn_welcome_conversations">View/submit conversations</string>
+    <string name="ui_btn_welcome_preferences">Update settings</string>
+    <string name="ui_btn_create_profile_submit">Submit</string>
+    <string name="ui_btn_conversation_submit_add_new">Add new texts</string>
+    <string name="ui_btn_conversation_submit_add">Add customized</string>
+    <string name="ui_btn_conversation_submit_new">Submit as new</string>
+
+    <string name="menu_conversation_submit">Submit conversation</string>
+	
+	<string name="txt_mail_body">Greetings, \n this is your exported conversation with</string>
+	<string name="txt_mail_subject">Conversation with</string>
+    <string name="txt_conversation_title_default">Conversation</string>
+    <string name="txt_conversation_person_name_default">Girl</string>
+	
+	<string name="toast_exports_deleted">Exported files deleted.</string>
+    <string name="toast_conversation_submitted">Conversation submitted.</string>
+	
+	
+	<string name="ui_dialog_error_title">Error</string>
+    <string name="ui_dialog_success_title">Success</string>
+    <string name="ui_dialog_already_submitted_title">Already submitted</string>
+	<string name="ui_dialog_enter_email_title">Enter recipient e-mail address</string>
+	<string name="ui_dialog_reldate_title">Set relative date</string>
+	<string name="ui_dialog_filter_name_title">Set filter name</string>
+    <string name="ui_dialog_conversation_submit_title">Submit conversation</string>
+    <string name="ui_dialog_conversation_submitted_as_new_title">Submitted as new</string>
+	
+	<string name="menu_item_export">Send as HTML</string>
+    <string name="menu_item_submit">Submit to Manwhore</string>
+	<string name="menu_item_edit">Edit</string>
+	<string name="menu_item_delete">Delete</string>
+	<string name="menu_title_conversation">Conversation</string>
+	<string name="menu_title_filter">Filter</string>
+	
+	<string name="activity_filterList">Select filter</string>
+	<string name="activity_filter">Filter</string>
+	<string name="activity_conversationList">Conversations</string>
+	<string name="activity_conversation">Conversation</string>
+	<string name="menu_item_copy_clipboard">Copy</string>
+	<string name="menu_title_message">Message</string>
+	<string name="toast_text_copied">Text copied to clipboard.</string>
+	
+	<string name="time_year">year</string>
+    <string name="time_years">years</string>
+    <string name="time_month">month</string>
+    <string name="time_months">months</string>
+	<string name="time_week">week</string>
+    <string name="time_weeks">weeks</string>
+	<string name="time_day">day</string>
+	<string name="time_days">days</string>
+	<string name="time_hour">hr</string>
+	<string name="time_hours">hrs</string>
+	<string name="time_minute">min</string>
+	<string name="time_minutes">mins</string>
+	<string name="time_second">second</string>
+    <string name="time_seconds">seconds</string>
+    
+    <string name="rd_year">y</string>
+    <string name="rd_month">m</string>
+    <string name="rd_week">w</string>
+    <string name="rd_day">d</string>
+    <string name="rd_start">s</string>
+    <string name="rd_end">e</string>
+    <string name="rd_regexp">[+-]?[1-9][0-9]*[ymwd][se]?([+-]?[1-9][0-9]*[ymwd])*</string>
+    
+    <string name="dt_earlier">%s earlier</string>
+    <string name="dt_later">%s later</string>          
+</resources>

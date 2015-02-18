@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.manwhore.displayer"
+      android:versionCode="13"
+      android:versionName="1.0.12">     
+      
+    <application android:name="org.manwhore.displayer.DisplayerApplication" 
+        android:icon="@drawable/icon" android:label="ManwhoreTextDisplayer" android:debuggable="true">
+        <activity android:windowSoftInputMode="stateUnchanged" android:name=".ConversationViewActivity">
+        </activity>
+        <activity  android:name=".ConversationListActivity">            
+        </activity>
+        <!--<activity android:name=".FilterActivity">
+        </activity>
+        <activity android:name=".FilterListActivity">
+        </activity> -->
+        <activity  android:name=".SettingsActivity">
+        </activity>
+        <activity android:name=".WelcomeActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity  android:name=".CreateProfileActivity" android:label="@string/ui_label_create_profile"/>
+
+        <!-- Start of Crittercism.com Code -->        
+        <activity android:name="com.crittercism.NotificationActivity"/>
+        
+        <!-- Start of Crittercism Support Forum Manifest Code -->
+        <activity android:name="com.crittercism.NewFeedbackSpringboardActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.crittercism.NewFeedbackIssueListActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.crittercism.NewFeedbackQuestionListActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.crittercism.NewFeedbackItemDetailsActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="com.crittercism.NewFeedbackCreateActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"></activity>
+        <!-- End of Crittercism Support Forum Manifest Code -->
+        
+        <service android:name="com.crittercism.service.CrittercismService" android:process="com.crittercism.service" android:exported="true">
+            <intent-filter>
+                <action android:name="com.crittercism.service.CrittercismService" />
+            </intent-filter>
+        </service>
+        <!-- End of Crittercism.com Code -->
+
+    </application>
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+</manifest> 

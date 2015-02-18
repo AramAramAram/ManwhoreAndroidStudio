@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="REMOTE" class="org.manwhore.displayer.logging.DisplayerAppender">
+     <address>eisenheim.sigler.cz</address>
+    <port>6666</port>
+  </appender>
+        
+  <root level="DEBUG">
+    <appender-ref ref="REMOTE" />
+  </root>
+</configuration>

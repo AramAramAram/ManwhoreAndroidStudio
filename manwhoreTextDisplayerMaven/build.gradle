@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 10
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "org.manwhore.displayer"
+        minSdkVersion 7
+        targetSdkVersion 7
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-android:1.7.7'
+    compile 'com.google.code.maven-play-plugin.net.sf.jtidy:jtidy:r938'
+    compile 'com.google.inject.extensions:guice-assisted-inject:2.0'
+    compile 'com.google.code.guice:guice:1.0'
+    compile 'net.erdfelt.maven:xmlfresh-maven-plugin:2.3'
+    compile files('libs/xmlfresh-maven-plugin-2.3.jar')
+    compile files('libs/jtidy-r938.jar')
+    compile 'com.crittercism:crittercism-android-agent:5.0.4'
+    compile files('libs/android-xmlrpc.jar')
+    compile 'org.roboguice:roboguice:3.0.1'
+    compile 'com.crittercism:crittercism-android-ndk-agent:5.0.4'
+    compile 'com.google.inject.extensions:guice-throwingproviders:4.0-beta5'
+    compile files('libs/roboguice-2.0-rc2.jar')
+    compile 'org.codehaus.mojo:tidy-maven-plugin:1.0-beta-1'
+    compile 'org.eclipse.birt.runtime.3_7_1:Tidy:1'
+}

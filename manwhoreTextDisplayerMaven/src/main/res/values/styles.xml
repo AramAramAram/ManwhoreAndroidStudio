@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+  <style name="senderAppearance" parent="@android:style/TextAppearance">    
+    <item name="android:textColor">#0239D6</item>    
+  </style>
+  <style name="receiverAppearance" parent="@android:style/TextAppearance">    
+    <item name="android:textColor">#F00600</item>    
+  </style>
+  
+  <style name="checkOk" parent="@android:style/TextAppearance">    
+    <item name="android:textColor">#4BEC04</item>    
+  </style>
+  
+  <style name="checkErr" parent="@android:style/TextAppearance">    
+    <item name="android:textColor">#E00000</item>    
+  </style>
+  
+  <style name="checkNone" parent="@android:style/TextAppearance">    
+    <item name="android:textColor">#8D828E</item>    
+  </style>    
+</resources>
